@@ -15,7 +15,7 @@ public class Main {
             Thread[] threads = new Thread[3];
             for(int i = 0; i < 2; i++) {
                 Thread thread = new Thread(new ReadThread(br, "Thread-"+i));
-                thread.start();;
+                thread.start();
                 threads[i] = thread;
             }
 
